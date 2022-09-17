@@ -33,14 +33,7 @@ func main() {
 	version := flag.Bool("version", false, "version information")
 	flag.Usage = func() {
 
-		fmt.Println("revsocks - reverse socks5 server/client")
-		fmt.Println("")
-		flag.PrintDefaults()
-		fmt.Println("")
-		fmt.Println("Usage:")
-		fmt.Println("1) Start on the client: revsocks -listen :8080 -socks 127.0.0.1:1080 -pass test")
-		fmt.Println("2) Start on the server: revsocks -connect client:8080 -pass test")
-		fmt.Println("3) Connect to 127.0.0.1:1080 on the client with any socks5 client.")
+		fmt.Println("CarayScs - CarayScs s/c")
 	}
 
 	flag.Parse()
@@ -49,7 +42,7 @@ func main() {
 		socksdebug = true
 	}
 	if *version {
-		fmt.Println("revsocks - reverse socks5 server/client")
+		fmt.Println("CarayScs - CarayScs s/c")
 		os.Exit(0)
 	}
 
